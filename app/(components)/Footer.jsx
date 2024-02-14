@@ -2,8 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="addresses">
+    <footer className="w-full p-10 flex justify-center items-center flex-col bg-black text-[#ccc]">
+      <hr className="w-full h-0.5 bg-[#333] my-10" />
+      <div className="w-full max-w-[1100px] flex flex-row items-center justify-between">
         <address>
           India:
           <br />
@@ -26,7 +27,7 @@ const Footer = () => {
       </div>
       <br />
       <br />
-      <p>Copyright © 2023. All rights reserved.</p>
+      <p>Copyright © 2024. All rights reserved.</p>
     </footer>
   );
 };

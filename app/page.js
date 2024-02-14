@@ -7,20 +7,22 @@ import Footer from "./(components)/Footer";
 import Industries from "./(pages)/Industries";
 import PartWrapper from "./(pages)/PartWrapper";
 import Carousal from "./(pages)/Carousal";
+import Faq from "./(pages)/Faq";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen">
       <Hero />
       <div className="">
       <Carousal/>
-        <Award/>
+        {/* <Award/> */}
         <Services/>
+
         <Companies/>  
         <Industries/>
-        
         <PartWrapper/>
       </div>
+      <Faq />
       <Footer/>
     </main>
   );

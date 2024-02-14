@@ -36,7 +36,8 @@ const Services_Data = [
     title: "Cloud Services",
     img_url:
       "https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/service-ai-ml.svg",
-  },{
+  },
+  {
     id: 7,
     title: "Blockchain Services",
     img_url:
@@ -79,10 +80,12 @@ const Services = () => {
         {Services_Data.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-around border-[.1px] border-gray-500 opacity-40 h-44 p-5 m-2 rounded-2xl"
+            className="flex flex-col justify-around border border-gray-500 opacity-40 h-44 p-5 m-2 rounded-2xl"
           >
             <img src={item.img_url} className="w-8 " alt="err" />
-            <div className="ml-2 text-2xl text-start">{item.title}</div>
+            <div className="ml-2 text-lg xl:text-xl text-start">
+              {item.title}
+            </div>
           </div>
         ))}
       </div>
