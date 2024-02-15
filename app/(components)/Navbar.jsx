@@ -2,21 +2,27 @@
 import Image from "next/image";
 import React from "react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [navHeight, setNavHeight] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollHeight = window.scrollY;
-      console.log("Scroll Height:", scrollHeight);
-      setNavHeight(scrollHeight);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const scrollHeight = window.scrollY;
+        console.log("Scroll Height:", scrollHeight);
+        setNavHeight(scrollHeight);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
+  
 
   return (
     <nav
@@ -44,10 +50,10 @@ const Navbar = () => {
           reIT
         </div>
 
-        <div className="">ABOUT</div>
+        <div className=""><Link href={'/'}> About</Link></div>
         <div className="">SERVICES</div>
         <div className="">INDUSTRIES</div>
-        <div className="">PORTFOLIO</div>
+        <div className=""><Link href={'/portfolio'}> Portfolio</Link></div>
         <div className="">RESOURCES</div>
         <div className="">
           <div className="bg-[#126bfb] rounded-sm px-[25px] py-2">
