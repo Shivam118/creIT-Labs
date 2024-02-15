@@ -2,7 +2,7 @@ import React from "react";
 
 const PartWrapper = () => {
   return (
-    <div className="bg-black text-white w-full px-16 xl:px-[145px]">
+    <div className="bg-black text-white w-full px-8 xl:px-[145px]">
       <div className="flex h-[100vh]">
         <div className="w-1/2 flex justify-center items-center text-5xl px-10">
           Strategic Partnerships to Unlock Greater Business Value

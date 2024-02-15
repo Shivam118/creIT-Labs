@@ -3,11 +3,11 @@ import React from "react";
 
 const Companies = () => {
   return (
-    <div className="py-24 px-16 xl:px-[145px] w-full flex flex-col items-center justify-center bg-white">
+    <div className="py-24 px-8 xl:px-[145px] w-full flex flex-col items-center justify-center bg-white">
       <h3 className="text-2xl font-semibold mb-14 text-center">
-        Our Dynamic Team Comes From{" "}
+        Our Dynamic Team Comes From
       </h3>
-      <div className="w-full grid grid-cols-4 xl:grid-cols-5 gap-10 mb-6">
+      <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-10 mb-6">
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
           <Image
             src="/images/adobe.png"

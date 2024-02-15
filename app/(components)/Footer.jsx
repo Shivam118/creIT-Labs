@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full p-10 flex justify-center items-center flex-col bg-black text-[#ccc] px-16 xl:px-[145px]">
+    <footer className="w-full p-10 flex justify-center items-center flex-col bg-black text-[#ccc] px-8 xl:px-[145px]">
       <hr className="w-full h-0.5 bg-[#333] my-10" />
-      <div className="w-full max-w-[1100px] flex flex-row items-center justify-between">
+      <div className="w-full max-w-[1100px] flex flex-row items-start justify-between text-xs lg:text-base">
         <address>
           India:
           <br />
@@ -27,7 +27,9 @@ const Footer = () => {
       </div>
       <br />
       <br />
-      <p>Copyright © 2024. All rights reserved.</p>
+      <p className="text-xs lg:text-base">
+        Copyright © 2024. All rights reserved.
+      </p>
     </footer>
   );
 };
