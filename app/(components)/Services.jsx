@@ -9,6 +9,7 @@ import { MdComputer } from "react-icons/md";
 import { IoSettingsSharp } from "react-icons/io5";
 import { MdOutlineDraw } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
+import Link from "next/link";
 
 const Services_Data = [
   {
@@ -71,9 +72,12 @@ const Services = () => {
           We Create New Solutions and Transform <br /> Existing Ones with a
           Development Process That <br /> Beats Industry-Best Timelines
         </div>
-        <div className="mt-[50px] px-[25px] py-[10px] border-2 border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] cursor-pointer">
-          Our Services {`>`}
-        </div>
+        <Link
+          href="/portfolio"
+          className="mt-[50px] px-[25px] py-[10px] border-2 border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] cursor-pointer"
+        >
+          Our Portfolio {`>`}
+        </Link>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 py-[5rem]">
