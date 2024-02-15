@@ -3,7 +3,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 
 const Industries = () => {
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-black text-white py-20 w-full px-16 xl:px-[145px]">
       <div className="text-4xl text-center">
         A Unified Vision That Caters <br />
         to Diverse Industry Demands

@@ -3,7 +3,7 @@ import React from "react";
 
 const Companies = () => {
   return (
-    <div className="py-24 px-20 w-full flex flex-col items-center justify-center">
+    <div className="py-24 px-16 xl:px-[145px] w-full flex flex-col items-center justify-center bg-white">
       <h3 className="text-2xl font-semibold mb-14 text-center">
         Our Dynamic Team Comes From{" "}
       </h3>

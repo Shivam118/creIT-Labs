@@ -65,13 +65,13 @@ const Services_Data = [
 
 const Services = () => {
   return (
-    <div className="h-full bg-black text-white py-[96px] px-[140px]">
+    <div className="w-full bg-black text-white py-[96px] px-16 xl:px-[145px]">
       <div>
         <div className="text-4xl">
           We Create New Solutions and Transform <br /> Existing Ones with a
           Development Process That <br /> Beats Industry-Best Timelines
         </div>
-        <div className="mt-[50px] px-[25px] py-[10px] border-2 border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] ">
+        <div className="mt-[50px] px-[25px] py-[10px] border-2 border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] cursor-pointer">
           Our Services {`>`}
         </div>
       </div>

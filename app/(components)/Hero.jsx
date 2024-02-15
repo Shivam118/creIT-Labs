@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../(components)/Navbar";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <div class="h-[80vh] w-full relative pt-[100px] px-16 xl:px-[145px] flex items-center">
+    <div class="h-[80vh] w-full relative pt-[100px] px-16 xl:px-[145px] flex items-center justify-start">
       <Navbar />
       <div className="text-white font-medium flex flex-col gap-4">
         <div className="text-[42px]">
@@ -14,7 +14,7 @@ const Hero = () => {
           <br />
           conquer complex challenges through innovation and agility.
         </div>
-        <div className="mt-[20px] px-[25px] py-[10px] border-2 w-[230px] border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] ">
+        <div className=" cursor-pointer mt-[20px] px-[25px] py-[10px] border-2 w-[230px] border-white inline-block rounded-xl hover:bg-[#126bfb] hover:border-[#126bfb] ">
           Consult our experts {`>`}
         </div>
       </div>

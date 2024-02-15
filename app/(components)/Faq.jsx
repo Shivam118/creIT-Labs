@@ -3,7 +3,7 @@ import React from "react";
 const Faq = () => {
   return (
     <section
-      className="w-full px-10 flex flex-col items-center justify-center bg-black text-white pb-10"
+      className="w-full px-10 flex flex-col items-center justify-center bg-black text-white pb-10 px-16 xl:px-[145px]"
       id="faqs"
     >
       <h3 className="text-4xl mb-10">FAQs</h3>
