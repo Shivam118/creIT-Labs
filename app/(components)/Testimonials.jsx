@@ -1,7 +1,8 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import testimonials_data from "../(data)/testimonials_data";
+import { testimonials_data } from "../(data)/testimonials_data";
 
 const TestimonialCard = ({
   review,
@@ -31,6 +32,7 @@ const TestimonialCard = ({
 };
 
 const Testimonials = () => {
+  const swiperRef = useRef();
   return (
     <div className="w-full flex items-center justify-center flex-col bg-gradient-to-b from-[#000000] to-[#010030] py-10">
       {/* <div className="w-full flex items-center justify-center flex-col bg-gradient-to-b from-[#00000b] to-[#010030] py-10"> */}
@@ -46,18 +48,23 @@ const Testimonials = () => {
         to offer a seamlessly productive and growth-oriented partnership to its
         clients.
       </h6>
-      <div className="w-full pt-8 flex items-center justify-center">
+      <div className="w-full pt-16 flex items-center justify-center">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          spaceBetween={15}
+          slidesPerView={"auto"}
+          onSlideChange={() => {}}
+          onSwiper={() => {}}
+          freeMode={true}
+          className="w-full"
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
         >
           {testimonials_data.map((item, id) => (
             <SwiperSlide key={id}>
               <TestimonialCard
                 review={item.review}
-                avatar={item.avatar}
+                avatar={item?.avatar}
                 company={item.company}
                 name={item.name}
                 designation={item.designation}

@@ -4,7 +4,7 @@ const Portfolio_data = [
     title: "Eat Express",
     imgURL: "/images/eatxpress.png",
     content:
-      "Eat Express is a robust backend system for restaurant management and delivery logistics. The platform boasts real-time tracking, AI-driven recommendations, and a secure payment gateway, ensuring a superior and secure user experience. Eat Express stands  as a testament to Kuvaka s prowess in crafting bespoke IT solutions that redefine industry standards and elevate user satisfaction. With its technical sophistication and user-centric design, Eat Express positions Kuvaka as a key player in revolutionizing the digital food delivery landscape",
+      "Eat Express is a robust backend system for restaurant management and delivery logistics. The platform boasts real-time tracking, AI-driven recommendations, and a secure payment gateway, ensuring a superior and secure user experience.",
     technologies: [
       "NodeJs",
       "NextJS",
