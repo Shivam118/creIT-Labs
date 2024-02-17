@@ -14,7 +14,11 @@ import { LuLuggage } from "react-icons/lu";
 
 const Industries = () => {
   return (
-    <div className="bg-[linear-gradient(to_bottom_right,_#000_50%,_#080b4e)] text-white py-20 w-full px-8 xl:px-[145px]">
+    <div
+      className="bg-black text-white py-20 w-full px-8 xl:px-[145px]"
+      // className="bg-[linear-gradient(to_bottom_right,_#000_50%,_#080b4e)] text-white py-20 w-full px-8 xl:px-[145px]"
+      id="resources"
+    >
       <div className="text-xl lg:text-4xl text-center">
         A Unified Vision That Caters <br />
         to Diverse Industry Demands

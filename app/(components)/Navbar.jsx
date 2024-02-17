@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [navHeight, setNavHeight] = useState(0);
@@ -30,7 +31,7 @@ const Navbar = () => {
       style={{ transition: "all 0.5s" }}
     >
       <div className="w-full flex font-light justify-between items-center gap-10 text-xs xl:text-sm">
-        <Link href="/">
+        <ScrollLink to="home" smooth={true} duration={500} spy={true}>
           <div className="flex justify-center items-center xl:w-[150px] text-2xl relative font-bold">
             <span className="relative -top-2">
               <Image
@@ -48,22 +49,32 @@ const Navbar = () => {
             </span>
             reIT
           </div>
-        </Link>
+        </ScrollLink>
         <ul className="w-1/2 lg:flex flex-row justify-around items-end hidden">
           <li className="cursor-pointer hover:bg-[#fff2] py-2 px-4 rounded-lg hover:font-semibold">
-            ABOUT
+            <ScrollLink to="about" smooth={true} duration={500} spy={true}>
+              ABOUT
+            </ScrollLink>
           </li>
           <li className="cursor-pointer hover:bg-[#fff2] py-2 px-4 rounded-lg hover:font-semibold">
-            SERVICES
+            <ScrollLink to="services" smooth={true} duration={500} spy={true}>
+              SERVICES
+            </ScrollLink>
           </li>
           <li className="cursor-pointer hover:bg-[#fff2] py-2 px-4 rounded-lg hover:font-semibold">
-            INDUSTRIES
+            <ScrollLink to="industries" smooth={true} duration={500} spy={true}>
+              INDUSTRIES
+            </ScrollLink>
           </li>
           <li className="cursor-pointer hover:bg-[#fff2] py-2 px-4 rounded-lg hover:font-semibold">
-            <Link href="/portfolio">PORTFOLIO</Link>
+            <ScrollLink to="portfolio" smooth={true} duration={500} spy={true}>
+              PORTFOLIO
+            </ScrollLink>
           </li>
           <li className="cursor-pointer hover:bg-[#fff2] py-2 px-4 rounded-lg hover:font-semibold">
-            RESOURCES
+            <ScrollLink to="contact" smooth={true} duration={500} spy={true}>
+              RESOURCES
+            </ScrollLink>
           </li>
         </ul>
         <div className="cursor-pointer py-2 px-4 hover:font-semibold bg-[#126bfb] rounded-md">

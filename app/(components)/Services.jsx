@@ -66,7 +66,10 @@ const Services_Data = [
 
 const Services = () => {
   return (
-    <div className="w-full bg-black text-white py-[96px] px-8 xl:px-[145px]">
+    <div
+      className="w-full bg-black text-white py-[96px] px-8 xl:px-[145px]"
+      id="services"
+    >
       <div>
         <div className="text-2xl lg:text-4xl">
           We Create New Solutions and Transform <br /> Existing Ones with a

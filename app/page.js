@@ -8,18 +8,21 @@ import Industries from "./(components)/Industries";
 import PartWrapper from "./(components)/PartWrapper";
 import Carousal from "./(components)/Carousal";
 import Faq from "./(components)/Faq";
+import Testimonials from "./(components)/Testimonials";
+import Portfolio from "./(components)/Portfolio";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-center justify-center">
+    <main
+      className="w-full flex flex-col items-center justify-center"
+      id="home"
+    >
       <Hero />
-      <Carousal />
-      {/* <Award/> */}
       <Services />
+      <Portfolio />
       <Companies />
       <Industries />
-      {/* <PartWrapper /> */}
-      {/* <Faq /> */}
+      <Testimonials />
       <Footer />
     </main>
   );
