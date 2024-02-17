@@ -1,51 +1,30 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import testimonials_data from "../(data)/testimonials_data";
 
-const TestimonialCard = ({ imgURL, name, position, review, company }) => {
+const TestimonialCard = ({
+  review,
+  avatar = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-2379004.jpg&fm=jpg",
+  company,
+  name,
+  designation,
+  companyLogo,
+}) => {
   return (
     <article className="bg-[#0005] text-white w-4/5 border border-[#3c3c43] rounded-2xl p-7">
-      <p className="text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas illo
-        laboriosam quam explicabo accusamus sit? Quas delectus debitis iusto
-        ipsum impedit itaque facilis reprehenderit possimus qui voluptatem
-        beatae optio maxime quam ullam a recusandae soluta, laborum illo modi
-        accusantium reiciendis accusamus ut aut? Quae quaerat, iure ut quidem
-        error asperiores dicta amet quisquam eveniet rerum mollitia, obcaecati
-        minus dolorem aliquid tempora illo incidunt? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Nam quas illo laboriosam quam explicabo
-        accusamus sit? Quas delectus debitis iusto ipsum impedit itaque facilis
-        reprehenderit possimus qui voluptatem beatae optio maxime quam ullam a
-        recusandae soluta, laborum illo modi accusantium reiciendis accusamus ut
-        aut? Quae quaerat, iure ut quidem error asperiores dicta amet quisquam
-        eveniet rerum mollitia, obcaecati minus dolorem aliquid tempora illo
-        incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-        quas illo laboriosam quam explicabo accusamus sit? Quas delectus debitis
-        iusto ipsum impedit itaque facilis reprehenderit possimus qui voluptatem
-        beatae optio maxime quam ullam a recusandae soluta, laborum illo modi
-        accusantium reiciendis accusamus ut aut? Quae quaerat, iure ut quidem
-        error asperiores dicta amet quisquam eveniet rerum mollitia, obcaecati
-        minus dolorem aliquid tempora illo incidunt?
-      </p>
+      <p className="text-lg">{review}</p>
       <hr className="my-10 " />
       <div className="flex flex-row items-center justify-between">
         <div className="w-96 flex flex-row">
-          <img
-            src={
-              "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-2379004.jpg&fm=jpg"
-            }
-            alt={"Shivam"}
-            className="w-full max-w-36 h-full"
-          />
+          <img src={avatar} alt={name} className="w-full max-w-36 h-full" />
           <div className="pl-5 w-full flex flex-col items-center justify-center">
-            <h4 className="text-xl w-full">Shivam Sharma</h4>
-            <h4 className="text-lg w-full">Director</h4>
-            <h4 className="text-lg w-full">EQLFIN INC.</h4>
+            <h4 className="text-xl w-full">{name}</h4>
+            <h4 className="text-lg w-full">{designation}</h4>
+            <h4 className="text-lg w-full">{company}</h4>
           </div>
         </div>
-        <img src="/images/creItLabs.png" alt={company} className="w-36" />
+        <img src="/images/creItLabs.png" alt={companyLogo} className="w-36" />
       </div>
     </article>
   );
