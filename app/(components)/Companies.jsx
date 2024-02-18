@@ -12,7 +12,7 @@ const Companies = () => {
       </h3>
       <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-10 mb-6">
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/adobe.png"
             alt="Adobe"
             width={0}
@@ -22,7 +22,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/amazon.png"
             alt="Adobe"
             width={0}
@@ -32,7 +32,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/google.png"
             alt="Adobe"
             width={0}
@@ -42,7 +42,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/salesforce.png"
             alt="Adobe"
             width={0}
@@ -52,7 +52,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/tinder.png"
             alt="Adobe"
             width={0}
@@ -62,7 +62,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/darwinbox.png"
             alt="Adobe"
             width={0}
@@ -72,7 +72,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/gojek.png"
             alt="Adobe"
             width={0}
@@ -82,7 +82,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/guardian.png"
             alt="Adobe"
             width={0}
@@ -92,7 +92,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/happay.png"
             alt="Adobe"
             width={0}
@@ -102,7 +102,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/linkedin.png"
             alt="Adobe"
             width={0}
@@ -112,7 +112,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/myntra.png"
             alt="Adobe"
             width={0}
@@ -122,7 +122,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/wallmart.png"
             alt="Adobe"
             width={0}
@@ -132,7 +132,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/oyo.png"
             alt="Adobe"
             width={0}
@@ -142,7 +142,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/phonepe.png"
             alt="Adobe"
             width={0}
@@ -152,7 +152,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/target.png"
             alt="Adobe"
             width={0}
@@ -162,7 +162,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/xoxoday.png"
             alt="Adobe"
             width={0}
@@ -172,7 +172,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/zomato.png"
             alt="Adobe"
             width={0}
@@ -182,7 +182,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/goldmann.png"
             alt="Adobe"
             width={0}
@@ -192,7 +192,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/naukri.png"
             alt="Adobe"
             width={0}
@@ -202,7 +202,7 @@ const Companies = () => {
           />
         </span>
         <span className="max-w-[150px] w-full flex items-center justify-center grayscale hover:grayscale-0 cursor-pointer">
-          <Image
+          <img
             src="/images/vedantu.png"
             alt="Adobe"
             width={0}

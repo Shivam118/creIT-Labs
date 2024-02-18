@@ -34,7 +34,7 @@ const Navbar = () => {
         <ScrollLink to="home" smooth={true} duration={500} spy={true}>
           <div className="flex justify-center items-center xl:w-[150px] text-2xl relative font-bold">
             <span className="relative -top-2">
-              <Image
+              <img
                 src={"/images/creItLabs.png"}
                 alt={"companyLogo"}
                 width={0}
