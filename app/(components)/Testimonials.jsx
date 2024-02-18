@@ -7,6 +7,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const TestimonialCard = ({
   review,
@@ -22,14 +23,14 @@ const TestimonialCard = ({
       <hr className="my-10 " />
       <div className="flex flex-row items-center justify-between">
         <div className="w-96 flex flex-row">
-          <img src={"/images/shivam.png"} alt={name} className="w-full max-w-36 h-full" />
+          <Image width={0} height={0} src={"/images/shivam.png"} alt={name} className="w-full max-w-36 h-full" />
           <div className="pl-5 w-full flex flex-col items-center justify-center">
             <h4 className="text-xl w-full">{name}</h4>
             <h4 className="text-lg w-full">{designation}</h4>
             <h4 className="text-lg w-full">{company}</h4>
           </div>
         </div>
-        <img src="/images/creItLabs.png" alt={companyLogo} className="w-36" />
+        <Image width={0} height={0} src="/images/creItLabs.png" alt={companyLogo} className="w-36" />
       </div>
     </article>
   );

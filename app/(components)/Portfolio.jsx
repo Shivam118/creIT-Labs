@@ -1,5 +1,6 @@
 import Footer from "@/app/(components)/Footer";
 import Portfolio_data from "@/app/(data)/Portfolio_data";
+import Image from "next/image";
 import React from "react";
 
 const Portfolio = () => {
@@ -33,7 +34,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="w-full">
-              <img className="rounded-xl" src={data.imgURL} alt="err" />
+              <Image className="rounded-xl w-full h-full" src={data.imgURL} alt="err" width={0} height={0}/>
             </div>
           </article>
         ))}

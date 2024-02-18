@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
@@ -34,7 +33,7 @@ const Navbar = () => {
         <ScrollLink to="home" smooth={true} duration={500} spy={true}>
           <div className="flex justify-center items-center xl:w-[150px] text-2xl relative font-bold">
             <span className="relative -top-2">
-              <img
+              <Image
                 src={"/images/creItLabs.png"}
                 alt={"companyLogo"}
                 width={0}
