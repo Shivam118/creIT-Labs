@@ -3,22 +3,26 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { testimonials_data } from "../(data)/testimonials_data";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 const TestimonialCard = ({
   review,
-  avatar = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-2379004.jpg&fm=jpg",
+  avatar,
   company,
   name,
   designation,
   companyLogo,
 }) => {
   return (
-    <article className="bg-[#0005] text-white w-4/5 border border-[#3c3c43] rounded-2xl p-7">
+    <article className="bg-[#0005] text-white w-3/5 border border-[#3c3c43] rounded-2xl p-7">
       <p className="text-lg">{review}</p>
       <hr className="my-10 " />
       <div className="flex flex-row items-center justify-between">
         <div className="w-96 flex flex-row">
-          <img src={avatar} alt={name} className="w-full max-w-36 h-full" />
+          <img src={"/images/shivam.png"} alt={name} className="w-full max-w-36 h-full" />
           <div className="pl-5 w-full flex flex-col items-center justify-center">
             <h4 className="text-xl w-full">{name}</h4>
             <h4 className="text-lg w-full">{designation}</h4>
@@ -48,20 +52,17 @@ const Testimonials = () => {
         to offer a seamlessly productive and growth-oriented partnership to its
         clients.
       </h6>
-      <div className="w-full pt-16 flex items-center justify-center">
+      <div className="w-full pt-14">
         <Swiper
-          spaceBetween={15}
-          slidesPerView={"auto"}
-          onSlideChange={() => {}}
-          onSwiper={() => {}}
-          freeMode={true}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={2}
+          pagination={true}
+          modules={[Pagination]}
           className="w-full"
-          onBeforeInit={(swiper) => {
-            swiperRef.current = swiper;
-          }}
         >
           {testimonials_data.map((item, id) => (
-            <SwiperSlide key={id}>
+            <SwiperSlide key={id} className="w-full">
               <TestimonialCard
                 review={item.review}
                 avatar={item?.avatar}
