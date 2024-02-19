@@ -9,6 +9,16 @@
   /* border:1px solid red; */
 }
 
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noScrollBar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .portfolioScroll::-webkit-scrollbar {
   width: 100%;               /* width of the entire scrollbar */
 }
