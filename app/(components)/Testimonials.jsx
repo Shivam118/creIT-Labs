@@ -19,19 +19,19 @@ const TestimonialCard = ({
 }) => {
  
   return (
-    <article className="bg-[#0005] text-white w-full lg:w-3/5 border border-[#3c3c43] rounded-2xl p-7">
+    <article className="bg-[#0005] text-white w-full lg:w-3/5 border border-[#3c3c43] rounded-2xl p-7 h-[350px]">
       <p className="text-xs lg:text-lg">{review}</p>
       <hr className="my-10 " />
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div className="lg:w-96 flex flex-col lg:flex-row">
-          <Image width={0} height={0} src={"/images/shivam.png"} alt={name} className="w-full max-w-36 h-full" />
+          {/* <Image width={0} height={0} src={"/images/shivam.png"} alt={name} className="w-full max-w-36 h-full" /> */}
           <div className="lg:pl-5 w-full flex flex-col items-center justify-center pt-2 lg:p-0">
             <h4 className="text-xs lg:text-xl w-full">{name}</h4>
             <h4 className="text-xs lg:text-lg w-full">{designation}</h4>
             <h4 className="text-xs lg:text-lg w-full">{company}</h4>
           </div>
         </div>
-        <Image width={0} height={0} src="/images/creItLabs.png" alt={companyLogo} className="w-12 lg:w-36" />
+        {/* <Image width={0} height={0} src="/images/creItLabs.png" alt={companyLogo} className="w-12 lg:w-36" /> */}
       </div>
     </article>
   );
